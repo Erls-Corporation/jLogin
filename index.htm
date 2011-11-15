@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jLogin</title>
+<script type="text/javascript" src="jquery.v1.6.4.js"></script>
+<script type="text/javascript" src="jquery.form.js"></script>
+<script type="text/javascript" src="jquery.jlogin.js"></script>
+
+<link rel="stylesheet" type="text/css" href="jlogin.css"  />
+<!-- <link rel="stylesheet" type="text/css" href="new-theme.css" /> -->
+
+<style> .mydiv {margin:100px auto;max-width:400px;} </style>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+  		$(".mydiv").jlogin({post:"login.php", username:"email", onSuccess:"success.htm", description:"Use email: jlogin@devstring.com, password: jlogin"});
+	});	
+</script>
+
+
+</head>
+<body>
+
+	<div class="mydiv"></div>
+
+</body>
+</html>
